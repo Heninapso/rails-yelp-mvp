@@ -1,16 +1,15 @@
-<h1>Here is the list of all the restaurants</h1>
-<ul>
-<% @restaurants.each do |restaurant| %>
-  <li><%= restaurant.name %>
-    <ul>
-      <li> - Address: <%= restaurant.address%></li>
-      <li> - Phone Number: <%= restaurant.phone_number%></li>
-      <li> - Type of cuisine: <%= restaurant.category%></li>
-      <li><%= link_to('See detailed page', restaurant_path(restaurant.id)) %></li>
-    </ul>
-  </li>
-  <% end %>
-</ul>
-
-
-<%= link_to('Add a new restaurant', new_restaurant_path) %>
+<div class='container'>
+  <h1>Here is the list of all the restaurants</h1>
+  <ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%= restaurant.name %>
+      <ul>
+        <li>Address: <%= restaurant.address%></li>
+        <li>Phone Number: <%= restaurant.phone_number%></li>
+        <li>Type of cuisine: <%= restaurant.category%></li>
+        <li><%= link_to('See detailed page', restaurant_path(restaurant.id)) %></li>
+      </ul>
+    </li>
+    <% end %>
+  </ul>
+</div>

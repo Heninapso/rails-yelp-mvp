@@ -1,8 +1,8 @@
-<%= simple_form_for @restaurant do |f| %>
+<%= simple_form_for @restaurant, :html=> {class: 'container'} do |f| %>
   <%= f.input :name %>
   <%= f.input :address %>
   <%= f.input :phone_number %>
   <%= f.input :category, hint: 'Choose between the listed categories: chinese, italian, japanese, french, belgian' %>
-  <%= f.button :submit %>
+  <%= f.button :submit, :class => 'btn-success'%>
 <% end %>
 

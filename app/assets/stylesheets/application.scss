@@ -13,3 +13,27 @@
 @import "components/index";
 @import "pages/index";
 @import "vendor/index";
+
+.container {
+  padding: 20px 10px;
+  margin-top: 50px;
+  h1 {
+    font-size: 36px;
+  }
+}
+
+.input {
+  padding-top: 25px;
+  .integer, .text, .string, .tel {
+    margin-right: 10px;
+  }
+  .hint {
+    margin-left: 3px;
+    font-style: italic;
+    font-size: 12px;
+  }
+}
+
+.btn-success {
+  margin-top: 25px;
+}
