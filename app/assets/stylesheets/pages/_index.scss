@@ -1,1 +1,12 @@
 @import "home";
+
+.card {
+  background-color: #d6f8d6;
+  box-shadow: 1px 1px 1px #5d737e;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 20px;
+  h2 {
+    font-size: 20px;
+  }
+}
