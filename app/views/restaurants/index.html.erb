@@ -6,6 +6,7 @@
       <li> - Address: <%= restaurant.address%></li>
       <li> - Phone Number: <%= restaurant.phone_number%></li>
       <li> - Type of cuisine: <%= restaurant.category%></li>
+      <li><%= link_to('See detailed page', restaurant_path(restaurant.id)) %></li>
     </ul>
   </li>
   <% end %>

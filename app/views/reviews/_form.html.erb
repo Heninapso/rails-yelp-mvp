@@ -1,0 +1,5 @@
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :rating, hint: 'Give a rating from 0 to 5' %>
+  <%= f.input :content %>
+  <%= f.button :submit %>
+<% end %>
